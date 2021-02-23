@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomButton">
+        <attr name="textMovie" format = "reference|string" />
+        <attr name="textMusic" format="reference|string" />
+        <attr name="textPodcast" format="reference|string" />
+        <attr name="textEbook" format="reference|string" />
+        <attr name="selectedButtonColor" format="reference|color" />
+        <attr name="unselectedButtonColor" format="reference|color" />
+        <attr name="selectedTextColor" format="reference|color" />
+        <attr name="unselectedTextColor" format="reference|color" />
+        <attr name="borderColor" format="reference|color" />
+        <attr name="borderWidth" format="reference|dimension" />
+        <attr name="buttonWidth" format="reference|dimension" />
+        <attr name="buttonHeight" format="reference|dimension" />
+        <attr name="state" format="enum">
+            <enum name="selected" value="1" />
+            <enum name="unselected" value="0" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>
+
