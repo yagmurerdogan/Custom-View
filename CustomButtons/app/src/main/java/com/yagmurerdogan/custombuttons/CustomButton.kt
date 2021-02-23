@@ -2,31 +2,47 @@ package com.yagmurerdogan.custombuttons
 
 import android.content.Context
 import android.graphics.Canvas
+import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 
+@Suppress("DEPRECATION")
 class CustomButton(context: Context, attrs: AttributeSet) : View(context, attrs) {
 
     private val paint = Paint()
 
-    private var textMovie = Constants.MOVIE_BUTTON_TEXT
-    private var musicMovie = Constants.MUSIC_BUTTON_TEXT
-    private var podcastMovie = Constants.PODCAST_BUTTON_TEXT
-    private var ebookMovie = Constants.EBOOK_BUTTON_TEXT
+    private var textMovie = resources.getString(R.string.textMovie)
+    private var textMusic = resources.getString(R.string.textMusic)
+    private var textPodcast = resources.getString(R.string.textPodcast)
+    private var textEbook = resources.getString(R.string.textEbook)
 
-    private var selectedButtonColor = Constants.SELECTED_BUTTON_COLOR
-    private var unselectedButtonColor = Constants.UNSELECTED_BUTTON_COLOR
+    private var selectedButtonColor = resources.getColor(R.color.black)
+    private var unselectedButtonColor = resources.getColor(R.color.white)
 
-    private var selectedTextColor = Constants.SELECTED_TEXT_COLOR
-    private var unselectedTextColor = Constants.UNSELECTED_TEXT_COLOR
+    private var selectedTextColor = resources.getColor(R.color.white)
+    private var unselectedTextColor = resources.getColor(R.color.black)
 
-    private var borderColor = Constants.DEFAULT_BORDER_COLOR
-    private var borderWidth = Constants.DEFAULT_BORDER_WIDTH
+    private var borderColor = resources.getColor(R.color.black)
+    private var borderWidth = resources.getDimension(R.dimen.borderWidth)
 
-    private var buttonWidth = Constants.DEFAULT_BUTTON_WIDTH
-    private var buttonHeight = Constants.DEFAULT_BUTTON_HEIGHT
-    
+    private var buttonWidth = resources.getDimension(R.dimen.buttonWidth)
+    private var buttonHeight = resources.getDimension(R.dimen.buttonHeight)
+
+    override fun onDraw(canvas: Canvas?) {
+        super.onDraw(canvas)
+
+        drawBackGround(canvas)
+        writeText(canvas)
+    }
+
+    private fun drawBackGround(canvas: Canvas?) {
+
+
+    }
+     private fun writeText(canvas: Canvas?) {
+
+     }
 
 }
 
