@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CustomButtons</string>
+    <string name="textMovie">MOVIES</string>
+    <string name="textMusic">MUSIC</string>
+    <string name="textPodcast">PODCAST</string>
+    <string name="textEbook">E-BOOK</string>
 </resources>
