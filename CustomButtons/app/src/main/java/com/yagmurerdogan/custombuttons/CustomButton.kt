@@ -2,7 +2,6 @@ package com.yagmurerdogan.custombuttons
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
@@ -43,6 +42,10 @@ class CustomButton(context: Context, attrs: AttributeSet) : View(context, attrs)
      private fun writeText(canvas: Canvas?) {
 
      }
+
+    private fun setupAttributes(attrs: AttributeSet?) {
+        val typedArray = context.theme.obtainStyledAttributes(attrs, R.styleable.CustomButton,0,0)
+    }
 
 }
 
